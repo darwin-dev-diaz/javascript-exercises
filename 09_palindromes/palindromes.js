@@ -1,7 +1,6 @@
 const palindromes = function (stringy) {
     const cleanedArr = stringy.match(/\w/g,' ').map((char=>char.toLowerCase()));
-
-    return JSON.stringify(cleanedArr) === JSON.stringify(cleanedArr.reverse()) ? true : false;
+    return JSON.stringify(cleanedArr) === JSON.stringify(cleanedArr.reverse());
 };
 
 console.log(palindromes('A car, a man, a maraca.'));
